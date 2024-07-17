@@ -207,8 +207,8 @@ def main(args):
     color = color_list[color_idx]
     
     config = SynthesisParameterConfig(
-        f'../data/petals/{color}/*.png',
-        f'../data/petals/{color}/crown/*.png',
+        f'./work/data/petals/{color}/*.png',
+        f'./work/data/petals/{color}/crown/*.png',
         dic_pairs
     )
 
@@ -216,11 +216,11 @@ def main(args):
     side = max_len * 4
     padding_size = 6
     n_sample_petal = 3
-    # NUM_CREATE = 100
+    NUM_CREATE = 2
     sigma = 0.15
 
-    synthe_flw_dir = f'../data/synthetic_flw/flw/{color}'
-    synthe_mask_dir = f'../data/synthetic_flw/mask/{color}'
+    synthe_flw_dir = f'./work/data/synthetic_flw/flw/{color}'
+    synthe_mask_dir = f'./work/data/synthetic_flw/mask/{color}'
     if batch_idx == 0:
         os.makedirs(synthe_flw_dir, exist_ok=True)
         os.makedirs(synthe_mask_dir, exist_ok=True)
