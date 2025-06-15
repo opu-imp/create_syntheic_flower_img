@@ -1,0 +1,175 @@
+{
+    "id": "e7cc7c88-2ae2-4663-8cb0-a4142c55cb4a",
+    "name": "8614.png",
+    "status": "approved",
+    "externalStatus": "approved",
+    "url": "https://s3.ap-northeast-1.amazonaws.com/prod.fastlabel.app.contents/a5a34a3c-c04d-433b-a417-42dff8c839ae/36716954-0c83-4f9e-a7c6-cde83af9f4d0/tasks/8614.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYVHKCFVVBX2NMC7C%2F20220208%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220208T151221Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIgczvw6Q2vkXY18AT0FScAfzQqRwHcoExEQ8%2Fl6DNXUegCIQDKh2vSuAKQKXoORR0DgN406DCGPpKobf%2Bw%2BcUiYMNeXSqFBAjt%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDU5NTM0Mzg0Njc2MiIMgwB%2F%2FlLV8pDL1MO5KtkDztQek%2BaNeCPQ6G0nQfTh8qS%2B4mxNW4EmczDIX2SuD2Yr5bnj82dHzj9mvVkMbuws0gnN5cgEtaZ1ilMkf%2BYl3WKXpEWmaGvrNbI7e8SZ%2B%2Fw1oyom38BHaCz3d5cccOEAGxglWl24O0EkmsKrrTAcHP5TJIJNtB2Ph%2F2iM7jMc2p1OQ0pfljF2djj42h0AR7XhSkWEBYIF8%2FJf95nzTFv9MKk1XJvOVilVh7VADe9WzYJGdReKcpAknvM6QdX7D4eUzp368Ww0dwJk581TzVgaBzhb1AlFFiB4scRKnskPtybjr%2BJKK%2BycF99DC%2BCh9aKEbzSDvWkBNu80Xq%2B7Lx2NibkffmhJfE0r06wwC%2BSt6vuQGyF8o7wHhnx4USC3KiaSbbiVgbZ4qAosA%2BJXwI0d7TrrQIVd6j5mjDuOIPyfKN2lRhqr4jn4Y5WAERSOgJ90I5b22zJJaaQWdN2gHL0ZacQtHzCgvkz8TBS4G8n21f0lv%2FxIdW%2BEhorT5Z8GDwZ88pCwwJQbBJEo0Epy%2BpAxLQuuEUH384lMnn8PijssVtAN9lyaaQkdgF6UP5CP4ivBGbqv4N1RNOFTPz0J4HWs1NGQ4u3F2HqwdM9pjtTJbotCtlIqLFmUKAwtraJkAY6pQE6Zxe4RjyIzdOZdfZWy14dPTbbSQ%2BTzdmxSUGFRhE46wOvdvey9fw0Z6o9wKBKDk1ft0NFMZpFKNljybB0TEUPMWSbI8lGTuWjblZD6cmFgwmYWkHDSkL5Cb1Y3kSsiRCCaGI%2BXuzO92mZEe6gKN5ATRg%2FiXmkUAdouhLuNIl6HlBkvEMbvvSSA8cPO73P%2B4cSkU%2ByMRSRFr0eq7aby8DNJhwaUME%3D&X-Amz-Signature=22eb6a4e9001b882250eb1c4cb5949bd0d17c0ba43a45e5c5faca9483e730530&X-Amz-SignedHeaders=host",
+    "width": 1000,
+    "height": 667,
+    "annotations": [
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                520.48,
+                440.73
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                525.24,
+                194.06
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                625.24,
+                436.92
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                642.38,
+                362.63
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "bbox",
+            "title": "flower",
+            "value": "flower",
+            "color": "#FF0000",
+            "attributes": [],
+            "points": [
+                368.1,
+                174.06,
+                699.52,
+                495.01
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                595.71,
+                269.3
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                425.24,
+                356.92
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                445.24,
+                261.68
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        }
+    ],
+    "tags": [],
+    "assignee": "neo.kyouyupc",
+    "reviewer": null,
+    "approver": null,
+    "externalAssignee": null,
+    "externalReviewer": null,
+    "externalApprover": null,
+    "createdAt": "2022-01-14T16:30:33.194Z",
+    "updatedAt": "2022-02-07T09:26:05.000Z"
+}

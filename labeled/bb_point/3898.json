@@ -1,0 +1,155 @@
+{
+    "id": "db5800a7-1836-40e0-a2e4-59e872f7b2ec",
+    "name": "3898.png",
+    "status": "approved",
+    "externalStatus": "approved",
+    "url": "https://s3.ap-northeast-1.amazonaws.com/prod.fastlabel.app.contents/a5a34a3c-c04d-433b-a417-42dff8c839ae/f17322af-2db8-4145-90f5-c6f096fe00fb/tasks/3898.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYVHKCFVVFJABONWN%2F20220209%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220209T092403Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkgwRgIhAJ53V7JbjdfzQQ3ej7w9IQUxwrN8Sbadj3uEkUkXe9G5AiEAhgmnXMPAq%2Brzs1kOCFU4lYV25b%2F1TzH9SMTleT36pPcqiQQI%2Fv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1OTUzNDM4NDY3NjIiDKce1E76hKZZx7mAZSrdA64u%2F19IIFQsSsnjOXojb20qbb7b%2FGUQJ00vXBSAUM785gqwRxqNwBubGfLIspyrIje2ZvQ8I5MPrfq1x8O6aoXPrjCPV2TlLHD9LlCa2q1TBOI48wU1tJiQzrBN0AiLJgBRdlQ%2BDRRfLvOFh1I%2Fr2Iz6gXU%2B1dmvsPuq9o1pGF1%2FO4oJuGCVbfER6BpkEyfPiJpw01cGEQhZWt7qz211AmA5NwHrxYbzs9WhYQ8kK%2FPKZ0Egl8LEye%2BV47UY%2FCe%2FO5tCIZml79duqbk5bnCKF9lBQO9OTEyO9xJXQXx0g4QFCYX658Ojt0LDwUftC6zrww51QybDdFKaLxla3igFYYVH5id6336NXOaGNSVbtyN%2FybPOEKgSLNybvw04HbeDEGfUY%2B2JHXhvYztoSzYd2j8OIHsmSA91ZTRFnVC1FWQkSm%2B25UW%2FCyqmDNvjmPGPCaR41wn44dP2%2BwAXzOkuE4E%2BT%2BNy7Q39q3bEll2Hxn%2FyiWuJ7pkVxwnJU%2FcK5eUI6RKJxDvO5jvAMIawA52Ts0d2BUZn8h87GKhgtwWHXpK9wzAYAYZemii7ZG0ZQirVBs3I8mRIFQZ%2Bkh0PTwY7LMnQKa7nsoiqSlltpvvJ0Zdn73NMTwhghELk4vAUDDXlI2QBjqkAVGyQgE65NtZpuWKsvsH30BEsDpzljjVHM4SG78Vp4HirNLwIwpM8Y4zwno34H9NHiCBXUlFzCSm1URzeCEtT%2BbATT9sJvjz1GV7OTcDGEMEE9CD2sLRg8W%2BXmaf33vPFOAuCDyUhUy84K1Vp5g826o4saa%2F8sII4wwdwh%2B%2FNgqoJiP4QuaRexAfMKclhdHbVQjJvRBQtrbp%2FXw7xoYIcTNdQC86&X-Amz-Signature=cf2018807cbde485d7263c8aaaf84c5ce5751a27020891adf17dc0da8b2efb9f",
+    "width": 1000,
+    "height": 662,
+    "annotations": [
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                543.5,
+                217.33
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                645.5,
+                278.33
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                606.5,
+                376.33
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                495.5,
+                407.33
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                405.5,
+                354.33
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                436.5,
+                240.33
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "bbox",
+            "title": "flower",
+            "value": "flower",
+            "color": "#FF0000",
+            "attributes": [],
+            "points": [
+                309.5,
+                90.33,
+                725.5,
+                488.33
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        }
+    ],
+    "tags": [],
+    "assignee": "hiramoto",
+    "reviewer": "",
+    "approver": "hiramoto",
+    "externalAssignee": "",
+    "externalReviewer": "",
+    "externalApprover": "",
+    "createdAt": "2022-02-09T17:45:19.839754",
+    "updatedAt": "2022-02-09T18:21:34"
+}
