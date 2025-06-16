@@ -1,6 +1,6 @@
 """Calculate circular fit for flower petal arrangements."""
 from typing import List, Tuple
-from config import MatchConfig
+from ..config.settings import MatchConfig
 
 # Use arrangements from config
 arranges = MatchConfig.get_all_arrangements()

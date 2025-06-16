@@ -37,26 +37,37 @@ The project follows a modular design with these key components:
 ### Docker Environment
 ```bash
 # Build container
-docker build -t synthetic-flowers .
+docker build -f docker/Dockerfile -t synthetic-flowers .
 
 # Run container
 docker run -v $(pwd):/work -p 8899:8899 synthetic-flowers
+
+# Start Jupyter Lab
+docker exec -it <container> /work/docker/start-jupyter.sh
 ```
 
-### Jupyter Lab
+### Package Installation
 ```bash
-# Start Jupyter Lab server
-./start-jupyter.sh
-# Access at localhost:8899 with token 'ttt'
+# Install in development mode
+pip install -e .
+
+# Install with development dependencies
+pip install -e ".[dev]"
+
+# Install with Jupyter support
+pip install -e ".[jupyter]"
 ```
 
 ### Python Execution
 ```bash
 # Run main synthesis script (requires 40+ CPU cores)
-python create_synthe_v4.py
+python scripts/create_synthetic.py
 
-# Process individual color/batch
-python -c "from create_synthe_v4 import main; main((color_idx, batch_idx, num_create))"
+# Or use the installed command
+create-synthetic-flowers
+
+# Import as package
+python -c "from src.core.synthesis import synthesize_single_flower"
 ```
 
 ## Data Requirements
