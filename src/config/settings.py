@@ -1,6 +1,7 @@
 """Configuration file for synthetic flower image generation."""
 
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
+import os
 
 class SynthesisConfig:
     """Configuration class for synthetic flower image generation."""
@@ -83,6 +84,26 @@ class SynthesisConfig:
     def get_output_mask_dir(cls, color: str) -> str:
         """Get output mask directory for given color."""
         return cls.OUTPUT_MASK_DIR_TEMPLATE.format(color=color)
+    
+    @classmethod
+    def use_aestivation_data(cls) -> bool:
+        """Check if aestivation data should be used for synthesis."""
+        return hasattr(cls, '_use_aestivation') and cls._use_aestivation
+    
+    @classmethod
+    def set_aestivation_mode(cls, enabled: bool) -> None:
+        """Enable or disable aestivation data mode."""
+        cls._use_aestivation = enabled
+    
+    @classmethod
+    def get_aestivation_path(cls) -> str:
+        """Get path to aestivation directory."""
+        return getattr(cls, '_aestivation_path', 'aestivation')
+    
+    @classmethod
+    def set_aestivation_path(cls, path: str) -> None:
+        """Set path to aestivation directory."""
+        cls._aestivation_path = path
 
 
 class MatchConfig:
@@ -122,7 +143,7 @@ class MatchConfig:
 
 
 # Utility functions for configuration
-def validate_config():
+def validate_config() -> bool:
     """Validate configuration parameters."""
     config = SynthesisConfig()
     

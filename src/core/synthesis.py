@@ -2,13 +2,14 @@
 
 import random
 import math
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 
 import cv2
 import numpy as np
 
 from ..config.settings import SynthesisConfig
 from ..io.multi_channel import write_img
+from ..io.aestivation_reader import AestivationDataReader
 from .image_processing import crop_foreground, refine_edge
 from .geometry import rotate_image, put_crown
 
@@ -89,13 +90,57 @@ def place_petal_on_synthetic(img_synthetic: np.ndarray,
     return img_synthetic, synthetic_mask, agg_synthetic_mask
 
 
-def synthesize_single_flower(config, max_len: int, side: int) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+def get_petal_arrangement_aestivation(aestivation_reader: AestivationDataReader, 
+                                    petal_counts: List[int] = [4, 5, 6, 7, 8, 9, 10]) -> Tuple[List[float], List[int]]:
+    """Get petal arrangement from aestivation data.
+    
+    Args:
+        aestivation_reader: Reader for aestivation data
+        petal_counts: Preferred petal counts
+        
+    Returns:
+        Tuple of (angles, depth_levels)
+    """
+    # Select number of petals randomly from available counts
+    available_counts = []
+    for count in petal_counts:
+        try:
+            patterns = aestivation_reader.get_patterns_by_length(count, min_count=100)
+            if patterns:
+                available_counts.append(count)
+        except:
+            continue
+    
+    if not available_counts:
+        # Fallback to default arrangement
+        return [0, 90, 180, 270], [0, 1, 2, 0]
+    
+    # Select petal count
+    petal_count = random.choice(available_counts)
+    
+    # Get weighted sampler and sample pattern
+    sampler = aestivation_reader.get_weighted_pattern_sampler(petal_count, min_count=100)
+    pattern_str, depth_list = sampler()
+    
+    # Generate angles from pattern
+    angles = aestivation_reader.generate_angles_from_pattern(
+        depth_list, 
+        base_angle=137.5,  # Golden angle
+        noise_sigma=SynthesisConfig.ANGLE_NOISE_SIGMA
+    )
+    
+    return angles, depth_list
+
+
+def synthesize_single_flower(config: SynthesisConfig, max_len: int, side: int, 
+                           aestivation_reader: Optional[AestivationDataReader] = None) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Synthesize a single flower image with masks.
     
     Args:
         config: Synthesis parameter configuration
         max_len: Maximum dimension of petals
         side: Side length of output image
+        aestivation_reader: Optional reader for aestivation data
         
     Returns:
         Tuple of (synthetic_image, aggregated_mask, multi_channel_mask)
@@ -110,12 +155,29 @@ def synthesize_single_flower(config, max_len: int, side: int) -> Tuple[np.ndarra
     crown_size = int(max_len * SynthesisConfig.CROWN_SIZE_RATIO)
     img_crown = cv2.resize(img_crown, (crown_size, crown_size))
     
-    # Select angles and petals
-    angles = random.choice(config.angles_list)
+    # Select angles and depth levels
+    if SynthesisConfig.use_aestivation_data() and aestivation_reader:
+        angles, depth_levels = get_petal_arrangement_aestivation(aestivation_reader)
+    else:
+        # Use traditional configuration
+        angles = random.choice(config.angles_list)
+        depth_levels = None
+    
+    # Select petals
     petals = random.choices(config.petals, k=SynthesisConfig.N_SAMPLE_PETAL)
     
-    # Process each petal
-    for i, angle in enumerate(angles):
+    # Sort petals by depth if using aestivation data
+    if depth_levels:
+        # Create list of (angle, depth, index) and sort by depth (back to front: 0, 1, 2)
+        petal_info = [(angles[i], depth_levels[i], i) for i in range(len(angles))]
+        petal_info.sort(key=lambda x: x[1])  # Sort by depth: 0=back, 1=middle, 2=front
+        angles = [info[0] for info in petal_info]
+        processing_order = [info[2] for info in petal_info]
+    else:
+        processing_order = list(range(len(angles)))
+    
+    # Process each petal in depth order
+    for idx, angle in enumerate(angles):
         synthetic_mask = np.zeros((side, side), dtype=np.uint8)
         
         # Select and augment petal
@@ -130,13 +192,18 @@ def synthesize_single_flower(config, max_len: int, side: int) -> Tuple[np.ndarra
         ]
         
         # Add angle noise and rotate
-        angle += noise(mu=0, sigma=SynthesisConfig.ANGLE_NOISE_SIGMA)
+        if not (SynthesisConfig.use_aestivation_data() and aestivation_reader):
+            # Only add noise if not using aestivation (which already includes noise)
+            angle += noise(mu=0, sigma=SynthesisConfig.ANGLE_NOISE_SIGMA)
         angle_radian = math.radians(angle)
         result = rotate_image(petal, petal_img_center, angle_radian, SynthesisConfig.PADDING_SIZE)
         
+        # Use original index for mask labeling
+        original_idx = processing_order[idx] if depth_levels else idx
+        
         # Place petal on synthetic image
         img_synthetic, synthetic_mask, agg_synthetic_mask = place_petal_on_synthetic(
-            img_synthetic, synthetic_mask, agg_synthetic_mask, result, i, side
+            img_synthetic, synthetic_mask, agg_synthetic_mask, result, original_idx, side
         )
         
         synthetic_masks.append(synthetic_mask)

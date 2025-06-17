@@ -9,10 +9,12 @@
 ## ✨ 特徴
 
 - **葉序理論ベースの配置**: 自然な花の成長パターンの数学的モデルを使用
+- **Aestivationデータ統合**: 植物原基発生シミュレーションによる統計的配置パターン
 - **マルチチャンネルマスク生成**: 各花弁の詳細なセグメンテーションマスクを作成
 - **高性能処理**: マルチプロセシングによる並列処理をサポート
 - **設定可能なパラメータ**: 柔軟な花弁数、配置、拡張オプション
 - **HDF5サポート**: マルチチャンネルマスクの効率的な保存
+- **深度順配置**: 花弁の前後関係を考慮した自然な重なり
 
 ## 📁 プロジェクト構成
 
@@ -29,6 +31,7 @@ create_syntheic_flower_img/
 │   │   └── pattern_match.py      # パターンマッチングユーティリティ
 │   ├── io/                       # 入出力操作
 │   │   ├── multi_channel.py      # マルチチャンネルマスクI/O
+│   │   ├── aestivation_reader.py # Aestivationデータリーダー
 │   │   └── ground_truth.py       # グラウンドトゥルース生成
 │   ├── utils/                    # ユーティリティ関数
 │   │   └── common.py             # 共通ユーティリティ（IoU、NMSなど）
@@ -36,7 +39,11 @@ create_syntheic_flower_img/
 │       └── settings.py           # 設定クラス
 ├── scripts/                      # 実行スクリプト
 │   ├── create_synthetic.py       # メイン合成スクリプト
+│   ├── test_aestivation.py       # Aestivation機能テスト
 │   └── run_synthesis.sh          # バッチ実行スクリプト
+├── aestivation/                  # Aestivationシミュレーションデータ
+│   ├── tmp.csv                  # パターン統計ファイル
+│   └── ...                      # その他のシミュレーション出力
 ├── notebooks/                    # Jupyterノートブック
 ├── docker/                       # Docker設定
 ├── docs/                         # ドキュメント
@@ -110,12 +117,32 @@ docker exec -it <container_id> /work/docker/start-jupyter.sh
 ### 基本的な使用方法
 
 ```bash
-# メイン合成スクリプトを実行
+# 従来方式（固定パターン）でメイン合成スクリプトを実行
 python scripts/create_synthetic.py
+
+# Aestivationデータを使用した生成
+python scripts/create_synthetic.py --use-aestivation
+
+# カスタムパス指定
+python scripts/create_synthetic.py --use-aestivation --aestivation-path /path/to/aestivation
 
 # またはバッチスクリプトを使用
 ./scripts/run_synthesis.sh
 ```
+
+### Aestivationデータ統合
+
+新機能として、植物原基発生シミュレーション（aestivation）から得られた統計データを使用できます：
+
+```bash
+# Aestivation機能のテスト
+python scripts/test_aestivation.py
+
+# Aestivationモードでの生成実行
+python scripts/create_synthetic.py --use-aestivation
+```
+
+詳細は [Aestivation統合ドキュメント](docs/AESTIVATION_INTEGRATION.md) を参照してください。
 
 ### Python API
 
@@ -123,8 +150,9 @@ python scripts/create_synthetic.py
 from src.core.synthesis import synthesize_single_flower
 from src.core.geometry import SynthesisParameterConfig
 from src.config.settings import SynthesisConfig
+from src.io.aestivation_reader import AestivationDataReader
 
-# 設定を初期化
+# 従来方式
 config = SynthesisParameterConfig(
     path_petals="../data/petals/黄色丸/*.png",
     path_crowns="../data/petals/黄色丸/crown/*.png",
@@ -136,6 +164,17 @@ img, mask, multi_channel_mask = synthesize_single_flower(
     config, 
     max_len=256, 
     side=1024
+)
+
+# Aestivationデータを使用した生成
+SynthesisConfig.set_aestivation_mode(True)
+aestivation_reader = AestivationDataReader('aestivation')
+
+img, mask, multi_channel_mask = synthesize_single_flower(
+    config, 
+    max_len=256, 
+    side=1024,
+    aestivation_reader=aestivation_reader
 )
 ```
 

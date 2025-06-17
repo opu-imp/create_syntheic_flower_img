@@ -179,7 +179,7 @@ class SynthesisParameterConfig:
         except Exception as e:
             raise RuntimeError(f"Error processing images from {path_dir}: {e}")
 
-    def get_max_len(self):
+    def get_max_len(self) -> int:
         # Get dimensions of all images
         dimensions = [img.shape for img in self.petals]
 
