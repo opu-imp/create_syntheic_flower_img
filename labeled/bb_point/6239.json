@@ -1,0 +1,215 @@
+{
+    "id": "771e30af-31fa-4ff9-a0ea-a3cc0a7465d4",
+    "name": "6239.png",
+    "status": "approved",
+    "externalStatus": "approved",
+    "url": "https://s3.ap-northeast-1.amazonaws.com/prod.fastlabel.app.contents/a5a34a3c-c04d-433b-a417-42dff8c839ae/36716954-0c83-4f9e-a7c6-cde83af9f4d0/tasks/6239.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYVHKCFVVJQWN3EWX%2F20220208%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220208T151216Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhANiRkgiO2NuQSitzELYgy0OdJ0gKFTbZnMcMHSoVIBxhAiBx9jDtG%2F%2FTp8sGzeUPQL8gX3rXUIV0VsiywqXlgN6k0SqFBAjt%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDU5NTM0Mzg0Njc2MiIMRxGPADpIW0rjYPgqKtkDMJZF%2FKKKo4IHUzAABrFHnvsLZRsl8aGogylv3nH4y270E7fJRva8EJlhgcjKI10gVdH0h0jNjO0H22UbyuV1dmem9%2Fdb3dmDYbbI0vGBYHLNjoHCmQAE9U8OHUGQlXQlkLzFwzTZdQxSYRf8G4sndRLx4cawX3ChpSueKMiPcC6V9nMDQ%2BBxnDcVMk4ch%2BccMIxXGO1vOVMnP%2FXjEtAaVNMbfp6y6y6DvpPWcuiLSUlr6b17KJ7knlw%2FfrRBV41HMTr1RGB6pPkTsOpUrpZ8UzS8jrOOymnKjCHEF6UJ1T2CFbUUwfpEdewgrqgATn%2FPPUCDpGCqy924nbODXe3HEZJcYdDEAa81iadjTFF%2BRdal1gZ%2FquwMKwNUoZUBiZ8cL7QXh1iQtLr3ICgLaPbzvjRAIleY55KShDuxcUDrH5e5xXXQCoGgOflZes2Zsm5NBckMCeqpkis7RT7XbknS7tsmfeMMVGTj38lpRUCw9%2Flab64bCcBt6H6Gw8kPFfYB%2BKsQiWJV2o%2BJ5DRZGHrPHd92BjUCIVreTUMmVo7s%2BTTBzjZ7LD8HRgflUVLHbgLfX1XMXIlO4p4HVLuma%2BLpN2dRcFKElKZYmlFD8Q24fOf775klWjbUDk4wtraJkAY6pQEi10Y4aI4iDNd1GIxhsnrwmZidmU%2Fh3YMLqCZw%2F43LcjauSvKAw6aPDm8ExMwYbu9m8r4avqQC%2FgoZ9bt8KitUvq6TUjczx7gBNJa2AWibUipbuEYOthTtEPjH2TveO33kzAF4giqeLtOf7J%2Bx1mHOx6tt1O0rm8qP0HEaeLA0t7LQQB2usEbxD42LTkb4%2BT%2BH58HjDoKZ01VfPJYUlMpnFqM81rs%3D&X-Amz-Signature=e11280ca90dc0ed8a7747cb5d70f2a852f0672e9a72eec6c46432e035a28b38a&X-Amz-SignedHeaders=host",
+    "width": 1000,
+    "height": 667,
+    "annotations": [
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                698.57,
+                433.68
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                483.33,
+                532.73
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                330.95,
+                458.44
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                659.75,
+                198.52
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                502.32,
+                206.62
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                704.28,
+                316.54
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                414.34,
+                226.3
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "bbox",
+            "title": "flower",
+            "value": "flower",
+            "color": "#FF0000",
+            "attributes": [],
+            "points": [
+                289.99,
+                146.06,
+                750.95,
+                571.77
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                339.09,
+                325.86
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                573.8,
+                513.68
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        }
+    ],
+    "tags": [],
+    "assignee": "neo.kyouyupc",
+    "reviewer": null,
+    "approver": null,
+    "externalAssignee": null,
+    "externalReviewer": null,
+    "externalApprover": null,
+    "createdAt": "2022-01-14T16:28:34.981Z",
+    "updatedAt": "2022-02-07T07:59:55.000Z"
+}

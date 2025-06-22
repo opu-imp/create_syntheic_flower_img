@@ -1,0 +1,195 @@
+{
+    "id": "1e36ed24-4ef9-4333-afb3-8bfe114f1bbb",
+    "name": "3941.png",
+    "status": "approved",
+    "externalStatus": "approved",
+    "url": "https://s3.ap-northeast-1.amazonaws.com/prod.fastlabel.app.contents/a5a34a3c-c04d-433b-a417-42dff8c839ae/36716954-0c83-4f9e-a7c6-cde83af9f4d0/tasks/3941.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAYVHKCFVVJQWN3EWX%2F20220208%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20220208T151212Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhANiRkgiO2NuQSitzELYgy0OdJ0gKFTbZnMcMHSoVIBxhAiBx9jDtG%2F%2FTp8sGzeUPQL8gX3rXUIV0VsiywqXlgN6k0SqFBAjt%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDU5NTM0Mzg0Njc2MiIMRxGPADpIW0rjYPgqKtkDMJZF%2FKKKo4IHUzAABrFHnvsLZRsl8aGogylv3nH4y270E7fJRva8EJlhgcjKI10gVdH0h0jNjO0H22UbyuV1dmem9%2Fdb3dmDYbbI0vGBYHLNjoHCmQAE9U8OHUGQlXQlkLzFwzTZdQxSYRf8G4sndRLx4cawX3ChpSueKMiPcC6V9nMDQ%2BBxnDcVMk4ch%2BccMIxXGO1vOVMnP%2FXjEtAaVNMbfp6y6y6DvpPWcuiLSUlr6b17KJ7knlw%2FfrRBV41HMTr1RGB6pPkTsOpUrpZ8UzS8jrOOymnKjCHEF6UJ1T2CFbUUwfpEdewgrqgATn%2FPPUCDpGCqy924nbODXe3HEZJcYdDEAa81iadjTFF%2BRdal1gZ%2FquwMKwNUoZUBiZ8cL7QXh1iQtLr3ICgLaPbzvjRAIleY55KShDuxcUDrH5e5xXXQCoGgOflZes2Zsm5NBckMCeqpkis7RT7XbknS7tsmfeMMVGTj38lpRUCw9%2Flab64bCcBt6H6Gw8kPFfYB%2BKsQiWJV2o%2BJ5DRZGHrPHd92BjUCIVreTUMmVo7s%2BTTBzjZ7LD8HRgflUVLHbgLfX1XMXIlO4p4HVLuma%2BLpN2dRcFKElKZYmlFD8Q24fOf775klWjbUDk4wtraJkAY6pQEi10Y4aI4iDNd1GIxhsnrwmZidmU%2Fh3YMLqCZw%2F43LcjauSvKAw6aPDm8ExMwYbu9m8r4avqQC%2FgoZ9bt8KitUvq6TUjczx7gBNJa2AWibUipbuEYOthTtEPjH2TveO33kzAF4giqeLtOf7J%2Bx1mHOx6tt1O0rm8qP0HEaeLA0t7LQQB2usEbxD42LTkb4%2BT%2BH58HjDoKZ01VfPJYUlMpnFqM81rs%3D&X-Amz-Signature=e18458593c3986885093433fb92ea4a7540630a3a805baf008228099399c9106&X-Amz-SignedHeaders=host",
+    "width": 1000,
+    "height": 662,
+    "annotations": [
+        {
+            "type": "bbox",
+            "title": "flower",
+            "value": "flower",
+            "color": "#FF0000",
+            "attributes": [],
+            "points": [
+                267.18,
+                73.91,
+                756.68,
+                530.51
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                543.6,
+                477.85
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                638.21,
+                406.28
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                443.23,
+                484.43
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                646.44,
+                255.72
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                588.03,
+                143.01
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                493.42,
+                149.59
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "0"
+                }
+            ],
+            "points": [
+                374.13,
+                371.72
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        },
+        {
+            "type": "keypoint",
+            "title": "point",
+            "value": "point",
+            "color": "#0033CC",
+            "attributes": [
+                {
+                    "type": "radio",
+                    "name": "point",
+                    "key": "point",
+                    "value": "1"
+                }
+            ],
+            "points": [
+                391.4,
+                233.51
+            ],
+            "keypoints": [],
+            "confidenceScore": -1
+        }
+    ],
+    "tags": [],
+    "assignee": "yu_komaki",
+    "reviewer": null,
+    "approver": null,
+    "externalAssignee": null,
+    "externalReviewer": null,
+    "externalApprover": null,
+    "createdAt": "2022-01-14T16:24:43.013Z",
+    "updatedAt": "2022-02-07T05:25:54.000Z"
+}

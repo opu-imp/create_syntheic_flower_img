@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-data/
-sample/
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -163,4 +159,6 @@ Thumbs.db
 
 # Docker
 .dockerignore
->>>>>>> f73e725ebd8b826f4c22a27a50cf94b032d52c52
+
+data/
+sample/
