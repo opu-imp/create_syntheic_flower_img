@@ -16,7 +16,7 @@
 
 ## aestivationデータ形式
 
-### パターン統計ファイル (tmp.csv)
+### パターン統計ファイル ([aestivation](https://github.com/opu-imp/aestivation)側のコードで作成)
 ```csv
 len,pattern,count
 4,OAAI,21000
