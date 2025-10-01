@@ -17,6 +17,7 @@ pip install -e .
 合成画像の資材への[リンク](https://drive.google.com/drive/folders/1FzPtgBJa3VG4KXnV1d1RRBWvsVlIClkP?usp=drive_link)
 
 リンク先には「花弁」と「花の中央部分」が花の特徴ごと（黄色丸など）にフォルダにまとめられています。
+
 花弁画像を以下のように配置してください：
 
 ```
