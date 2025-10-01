@@ -37,8 +37,8 @@ pip install -e .
   - NUMCREATE: 生成する合成画像の枚数
   - color: 花弁の色（ディレクトリ名）
 - 出力先
-  - 合成画像: f'work/data/synthetic_flw/flw/{color}'
-  - 重なり情報: f'work/data/synthetic_flw/mask/{color}'
+  - 合成画像: 'work/data/synthetic_flw/flw/{color}'
+  - 重なり情報: 'work/data/synthetic_flw/mask/{color}'
 - 出力例
 <img width="633" height="633" alt="Screenshot 0007-10-01 at 9 49 29" src="https://github.com/user-attachments/assets/973e2c8a-5a65-4cab-a65a-de52eed4866e" />
 
