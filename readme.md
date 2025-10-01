@@ -4,7 +4,7 @@
 
 ## 必要要件
 
-- Python 3.8以上
+- Python 3.8 以上
 - OpenCV、NumPy、H5Py
 
 ## インストール
@@ -14,6 +14,7 @@ pip install -e .
 ```
 
 ## データ構成
+
 //TODO: 画像フォルダへのリンクとどういうデータなのかを追加
 花弁画像を以下のように配置してください：
 
@@ -32,12 +33,23 @@ pip install -e .
 
 ## 使用方法
 
+- パラメータ
+  - NUMCREATE: 生成する合成画像の枚数
+  - color: 花弁の色（ディレクトリ名）
+- 出力先
+  - 合成画像: f'work/data/synthetic_flw/flw/{color}'
+  - 重なり情報: f'work/data/synthetic_flw/mask/{color}'
+- 出力
+
+## 実行
+
 ### 従来方式（ルールベース）
+
 ```bash
 python scripts/create_synthetic.py
 ```
 
-### aestivation統合方式（葉序の発生モデルのシミュレーションベース）
+### aestivation 統合方式（葉序の発生モデルのシミュレーションベース）
 
 **事前準備:**
 [aestivation](https://github.com/opu-imp/aestivation)リポジトリをクローンし、コンパイルして実行し、出力ファイル`tmp.csv`を以下のパスに配置：
@@ -49,11 +61,13 @@ create_syntheic_flower_img/
 ```
 
 **合成画像を生成:**
+
 ```bash
 python scripts/create_synthetic.py --use-aestivation
 ```
 
 ---
+
 ```
 @InCollection{信田2025,
   author =	{信田 浩希 and 内海 ゆづ子 and 藤本 仰一 and 岩村 雅一},
